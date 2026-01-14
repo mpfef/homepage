@@ -19,9 +19,9 @@ export default function AboutPage() {
         <header>
           <div className="title">
             <h2>
-              <Link href="/about">About Me</Link>
+              <Link href="/about">Mon parcours</Link>
             </h2>
-            <p>(in about {count(aboutMarkdown)} words)</p>
+            <p>(en {count(aboutMarkdown)} mots)</p>
           </div>
         </header>
         <Markdown>{aboutMarkdown}</Markdown>

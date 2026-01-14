@@ -5,6 +5,11 @@ import Link from 'next/link';
 
 import PageWrapper from './components/PageWrapper';
 
+import Markdown from 'markdown-to-jsx';
+
+import { homeMarkdown } from '@/data/home';
+import { Mako } from 'next/font/google';
+
 export const metadata: Metadata = {
   description:
     "Michael D'Angelo is a data scientist, machine learning engineer, and full-stack engineer.",
@@ -17,25 +22,14 @@ export default function HomePage() {
         <header>
           <div className="title">
             <h2>
-              <Link href="/about">About this site</Link>
+              <Link href="/about">L’instant hypnose</Link>
             </h2>
             <p>
-              A beautiful, responsive, statically-generated, react application written with modern
-              Javascript.
+              Place holder
             </p>
           </div>
         </header>
-        <p>
-          {' '}
-          Welcome to my website. Please feel free to read more <Link href="/about">about me</Link>,
-          or you can check out my <Link href="/resume">resume</Link>,{' '}
-          <Link href="/projects">projects</Link>, view <Link href="/stats">site statistics</Link>,
-          or <Link href="/contact">contact</Link> me.
-        </p>
-        <p>
-          {' '}
-          Source available <a href="https://github.com/mldangelo/personal-site">here</a>.
-        </p>
+        <Markdown>{homeMarkdown}</Markdown>
       </article>
     </PageWrapper>
   );

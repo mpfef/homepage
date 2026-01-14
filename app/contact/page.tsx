@@ -3,9 +3,6 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-import ContactIcons from '@/components/Contact/ContactIcons';
-import EmailLink from '@/components/Contact/EmailLink';
-
 import PageWrapper from '../components/PageWrapper';
 
 export const metadata: Metadata = {
@@ -20,15 +17,21 @@ export default function ContactPage() {
         <header>
           <div className="title">
             <h2>
-              <Link href="/contact">Contact</Link>
+              <Link href="/contact">Information de contact</Link>
             </h2>
           </div>
         </header>
         <div className="email-at">
-          <p>Feel free to get in touch. You can email me at:</p>
-          <EmailLink />
+          <span>
+            <b>Telephone </b>079 790 94 35
+          </span> <br></br>
+          <span>
+            <b>Addresse: </b> Chemin des mélèzes 16, 1965 Savièse 
+          </span><br></br>
+          <span>
+            <b>mail: </b> <a href='mailto:marianne.pfef@gmail.com'>marianne.pfef@gmail.com</a>
+          </span><br></br>
         </div>
-        <ContactIcons />
       </article>
     </PageWrapper>
   );

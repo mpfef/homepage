@@ -12,6 +12,9 @@ import degrees from '@/data/resume/degrees';
 import { categories, skills } from '@/data/resume/skills';
 import work from '@/data/resume/work';
 
+import PageWrapper from '../components/PageWrapper';
+
+
 export const metadata: Metadata = {
   title: 'Resume',
   description:
@@ -21,17 +24,18 @@ export const metadata: Metadata = {
 const sections = [
   { name: 'Education', id: 'education' },
   { name: 'Experience', id: 'experience' },
-  { name: 'Skills', id: 'skills' },
-  { name: 'Courses', id: 'courses' },
+  { name: 'Talents', id: 'skills' },
+  { name: 'Formations', id: 'courses' },
   { name: 'References', id: 'references' },
 ];
 
 export default function ResumePage() {
   return (
+    <PageWrapper>
     <article className="post" id="resume">
       <header>
         <div className="title">
-          <h2>Resume</h2>
+          <h2>Mon parcours</h2>
           <div className="link-container">
             {sections.map((section) => (
               <h4 key={section.id}>
@@ -41,11 +45,6 @@ export default function ResumePage() {
           </div>
         </div>
       </header>
-
-      <section id="education" className="education">
-        <div className="link-to" />
-        <Education data={degrees} />
-      </section>
 
       <section id="experience" className="experience">
         <div className="link-to" />
@@ -67,5 +66,7 @@ export default function ResumePage() {
         <References />
       </section>
     </article>
+    </PageWrapper>
+
   );
 }
