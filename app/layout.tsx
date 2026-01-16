@@ -23,8 +23,8 @@ const raleway = Raleway({
 
 export const metadata: Metadata = {
   title: {
-    default: "Michael D'Angelo",
-    template: "%s | Michael D'Angelo",
+    default: "L'Instant Hypnose",
+    template: "%s | L'Instant Hypnose",
   },
   description:
     "Michael D'Angelo's personal website. Data scientist, machine learning engineer, and full-stack developer.",
@@ -36,15 +36,15 @@ export const metadata: Metadata = {
     'engineer',
     'portfolio',
   ],
-  authors: [{ name: "Michael D'Angelo" }],
-  creator: "Michael D'Angelo",
+  authors: [{ name: "L'Instant Hypnose" }],
+  creator: "L'Instant Hypnose",
   metadataBase: new URL('https://mldangelo.com'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://mldangelo.com',
-    siteName: "Michael D'Angelo",
-    title: "Michael D'Angelo",
+    siteName: "L'Instant Hypnose",
+    title: "L'Instant Hypnose",
     description: 'Data scientist, machine learning engineer, and full-stack developer.',
     images: [
       {
