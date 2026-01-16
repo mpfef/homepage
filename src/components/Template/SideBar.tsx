@@ -15,7 +15,13 @@ const SideBar: React.FC = () => {
     <section id="sidebar">
       <section id="intro">
         <Link href="/" className="logo">
-          <Image src="../images/me.jpg" alt="Marianne Pfefferlé" width={251} height={357} priority />
+          <Image
+            src="/homepage/images/me.jpg"
+            alt="Marianne Pfefferlé"
+            width={251}
+            height={357}
+            priority
+          />
         </Link>
         <header>
           <h2>Marianne Pfefferlé</h2>
