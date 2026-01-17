@@ -23,7 +23,10 @@ export default function HomePage() {
             <h2>
               <Link href="/about">L’instant hypnose</Link>
             </h2>
-            <p>Place holder</p>
+            <blockquote>
+              <p>Vivre une expérience en hypnose est à chaque fois une aventure.</p>
+              <p>-François Roustan</p>
+            </blockquote>
           </div>
         </header>
         <Markdown>{homeMarkdown}</Markdown>
