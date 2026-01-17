@@ -7,7 +7,7 @@ import PageWrapper from '../components/PageWrapper';
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: "Contact Michael D'Angelo via email @ hi@mldangelo.com",
+  description: "Contacter Marianne Pfefferlé",
 };
 
 export default function ContactPage() {
@@ -17,25 +17,39 @@ export default function ContactPage() {
         <header>
           <div className="title">
             <h2>
-              <Link href="/contact">Information de contact</Link>
+              <Link href="/contact">Contact</Link>
             </h2>
           </div>
         </header>
-        <div className="email-at">
+      <div className="contact">
+        <div className="contact-left">
           <span>
-            <b>Telephone </b>079 790 94 35
+            <b>Adresse:</b><br />
+            Chemin des mélèzes 16<br />
+            1965 Savièse
           </span>
-          <br></br>
+
           <span>
-            <b>Addresse: </b>Chemin des mélèzes 16, 1965 Savièse
+            <b>Mail:</b><br />
+            <a href="mailto:marianne.pfef@gmail.com">
+              marianne.pfef@gmail.com
+            </a>
           </span>
-          <br></br>
-          <span>
-            <b>mail: </b>
-            <a href="mailto:marianne.pfef@gmail.com">marianne.pfef@gmail.com</a>
-          </span>
-          <br></br>
         </div>
+
+        <div className="contact-right">
+          <span>
+            <b>Téléphone:</b><br />
+            079 790 94 35
+          </span>
+
+          <img
+            src="/images/me.jpg"
+            alt="Contact"
+            className="contact-image"
+          />
+        </div>
+      </div>
       </article>
     </PageWrapper>
   );
