@@ -8,6 +8,6 @@ L’hypnose thérapeutique est un outil relationnel, complémentaire aux autres 
 - Améliorer la qualité du sommeil
 - Comment vivre les moments où les émotions sont trop présentes
 - Gérer différemment le ressenti douloureux
-- Préparation aux examens, à une intervention chirurgicale, examens radiologiques...
+- Préparation aux examens, à une intervention chirurgicale, examens radiologiques
 
 `;
