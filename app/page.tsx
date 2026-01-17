@@ -19,8 +19,8 @@ export default function HomePage() {
     <PageWrapper>
       <article className="post" id="index">
         <header>
-          <div className="title">
-            <h2>
+          <div className="title title-home">
+            <h2 className="h2-home">
               <Link href="/about">L’instant hypnose</Link>
             </h2>
             <blockquote>
