@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About',
-  description: "Learn about Michael D'Angelo",
+  title: 'Mon parcours',
+  description: "En savoir plus sur Marianne Pfefferlé",
 };
 
 export default function AboutLayout({ children }: { children: React.ReactNode }) {
