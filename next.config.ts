@@ -10,8 +10,8 @@ const nextConfig: NextConfig = {
     includePaths: ['./src/static/css'],
     silenceDeprecations: ['import'], // Silence @import deprecation warnings
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/homepage' : '/homepage',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/homepage/' : '/homepage/',
+  basePath: process.env.NODE_ENV === 'production' ? '/homepage' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/homepage/' : '',
   trailingSlash: true,
 
   // Turbopack configuration
@@ -40,4 +40,5 @@ if (process.env.TURBOPACK !== '1') {
 } else {
   module.exports = nextConfig;
 }
+console.log(nextConfig.basePath, nextConfig.assetPrefix)
 export default nextConfig;

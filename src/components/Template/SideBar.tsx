@@ -6,6 +6,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+import { getAssetPath } from '@/utils/assetPath';
+
 import ContactIcons from '../Contact/ContactIcons';
 
 const SideBar: React.FC = () => {
@@ -15,7 +17,13 @@ const SideBar: React.FC = () => {
     <section id="sidebar">
       <section id="intro">
         <Link href="/" className="logo">
-          <Image src="/images/me.jpg" alt="Marianne Pfefferlé" width={251} height={357} priority />
+          <Image
+            src={getAssetPath('/images/me.jpg')}
+            alt="Marianne Pfefferlé"
+            width={251}
+            height={357}
+            priority
+          />
         </Link>
         <header>
           <h2>Marianne Pfefferlé</h2>
