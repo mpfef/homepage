@@ -29,7 +29,7 @@ export default function HomePage() {
             </h2>
             <blockquote>
               <p>Vivre une expérience en hypnose est à chaque fois une aventure.</p>
-              <p>-François Roustan</p>
+              <p>-François Roustang</p>
             </blockquote>
           </div>
         </header>
