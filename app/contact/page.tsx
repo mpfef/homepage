@@ -44,7 +44,7 @@ export default function ContactPage() {
             <span>
               <b>Téléphone:</b>
               <br />
-              079 790 94 35
+              079 785 48 49
             </span>
 
             <img src={getAssetPath('/images/me.jpg')} alt="Contact" className="contact-image" />
