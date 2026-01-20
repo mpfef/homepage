@@ -12,7 +12,7 @@ import PageWrapper from './components/PageWrapper';
 
 export const metadata: Metadata = {
   description:
-    "Michael D'Angelo is a data scientist, machine learning engineer, and full-stack engineer.",
+    "Marianne Pfefferle, praticienne en hypnose ericksonienne, vous accompagne dans la gestion du stress, l'arrêt du tabac, la confiance en soi et le développement personnel.",
 };
 
 export default function HomePage() {
