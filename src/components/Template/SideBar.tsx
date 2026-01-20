@@ -47,7 +47,7 @@ const SideBar: React.FC = () => {
               </Link>
             ) : (
               <Link href="/" className="button">
-                Acceuil
+                Accueil
               </Link>
             )}
           </li>
